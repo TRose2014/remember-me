@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import { CircularProgress } from '@material-ui/core';
-import InfoCard from './components/InfoCard';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import InfoCard from './InfoCard';
+import Header from './Header';
+import Footer from './Footer';
 // import Dropdown from './components/Dropdown';
 // import './App.css';
 import axios from 'axios';
 import Typical from 'react-typical';
 
-function App() {
+function Home() {
   const [people, setPeople] = useState([]);
   const [loading, setLoading] = useState(true)
 
@@ -56,4 +56,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

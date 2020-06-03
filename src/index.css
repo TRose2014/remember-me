@@ -1,13 +1,156 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #262626; */
+  background-color:#830303;
+  /* background-color:white; */
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Playfair Display SC', serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bar{
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  /* font-size: 3vw; */
+  font-size: 2.5rem;
+}
+.header{
+  margin-bottom: 40px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 0px 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.MuiCardContent-root{
+
+
+}
+
+.MuiTypography-body1{
+  /* font-family: 'Playfair Display', serif !important; */
+  /* font-family: 'Josefin Sans', sans-serif !important; */
+  font-family: 'Merriweather', serif !important;
+  font-size: 1.1rem !important;
+}
+
+select{
+  float: right;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.cardContainer{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  background-color: #12663b !important;
+  margin-bottom: 40px;
+}
+
+.name{
+  font-size: 1.8rem !important;
+}
+
+.MuiAvatar-img {
+  width: auto !important;
+  height: 150px !important;
+  margin-bottom: 10px;
+}
+
+span{
+  font-weight: bold;
+}
+
+.footer{
+  /* background-color: rgb(227, 28, 35); */
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 5vw;
+}
+
+/* .MuiCardContent-root{
+  width: 80%;
+}
+
+.MuiAvatar-root{
+  width: 250px;
+} */
+
+/* Mobile */
+@media only screen and (max-device-width: 599px) {
+  .container{
+    grid-template-columns: 1fr;
+  }
+
+  .MuiAvatar-root {
+    margin: auto !important;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-device-width: 600px) {
+  .cardContainer{
+    /* margin: auto; */
+  }
+  .MuiCardContent-root{
+    width: 80% !important;
+  }
+  
+  .MuiAvatar-root{
+    width: 100% !important;
+  }
+}
+
+/* Tablet-2 */
+@media only screen and (min-device-width: 674px) {
+}
+
+/* Desktop */
+/* @media only screen and (min-device-width: 1010px) {
+} */
+
+/* Desktop-2 */
+@media only screen and (min-device-width: 1400px) {
+  .container{
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+
+  .cardContainer{
+    /* max-width: 70%; */
+    /* width: 1000px; */
+  }
+}
+
+/* Larger Desktop */
+/* @media only screen and (min-device-width: 1620px) {
+} */
+
+
+
