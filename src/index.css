@@ -27,7 +27,39 @@ code {
   font-size: 2.5rem;
 }
 .header{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul{
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.resource {
+  display: block;
+  list-style-type: none;
+}
+
+.resource li{
+  margin-bottom: 20px;;
+}
+
+.resource li a {
+  text-decoration: underline;
+  color: cornsilk;
+  word-spacing: .25em;
+  font-size: 2rem;
+}
+
+a{
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 40px;
+  align-items: center;
+  text-decoration: none;
 }
 
 #root {
@@ -36,6 +68,14 @@ code {
   align-items: center;
 }
 
+main{
+  overflow-x: hidden;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+
 .container{
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -43,17 +83,19 @@ code {
   width: 90%;
   margin: 0 auto;
 }
-
+/* 
 .MuiCardContent-root{
 
 
-}
+} */
 
-.MuiTypography-body1{
+.MuiTypography-body1, p{
   /* font-family: 'Playfair Display', serif !important; */
   /* font-family: 'Josefin Sans', sans-serif !important; */
   font-family: 'Merriweather', serif !important;
-  font-size: 1.1rem !important;
+  font-size: 1.5rem !important;
+  color: cornsilk;
+  /* color: black; */
 }
 
 select{
@@ -72,7 +114,9 @@ select{
 }
 
 .name{
-  font-size: 1.8rem !important;
+  font-size: 2.5rem !important;
+  /* color: black; */
+  color: cornsilk;
 }
 
 .MuiAvatar-img {
@@ -85,26 +129,62 @@ span{
   font-weight: bold;
 }
 
-.footer{
-  /* background-color: rgb(227, 28, 35); */
+em{
+  color: cornsilk;
+}
+
+/* .footer{
   padding: 30px;
   text-align: center;
   width: 100%;
   background-color: black;
   color: white;
   font-size: 5vw;
+} */
+
+.about{
+  text-align: center;
+  width: 90%;
 }
 
-/* .MuiCardContent-root{
-  width: 80%;
+.aboutHeader{
+  color: cornsilk;
+  font-size: 3em;
+
 }
 
-.MuiAvatar-root{
-  width: 250px;
+.about p{
+  color: cornsilk;
+  line-height: 2.5em;
+  word-spacing: .5em;
+
+}
+
+.resourceHeader{
+  color: cornsilk;
+  font-size: 3em;
+
+}
+
+/* .resourceContainer{
+  padding-top: 5%;
 } */
 
 /* Mobile */
 @media only screen and (max-device-width: 599px) {
+  .header{
+    display: block;
+  }
+
+  .header ul{
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .header ul a{
+    margin-left: 20px;
+  }
+
   .container{
     grid-template-columns: 1fr;
   }

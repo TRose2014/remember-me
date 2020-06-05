@@ -22,12 +22,6 @@ function InfoCard(props){
     setPeople([...people].sort(compare));
   }
 
-// const colors = ['#830303', 'black', '#12663b'];
-
-// const color=colors[index]
-// return(
-// <Card key={index}className="cardContainer" style={{'backgroundColor': color}}>
-
   return (
     <div>
       <select onClick={sortedArray}>
@@ -39,7 +33,8 @@ function InfoCard(props){
             <Card key={index}className="cardContainer">
               <CardContent>
               <Avatar alt={person.name} src={person.image_url} variant="square" style={{"width":"400px", "height":"auto"}} />
-                <Typography className="name">{person.name}</Typography>
+                <Typography className="name">
+                {person.name}</Typography>
                 <Typography>
                   <span>About Me: </span>
                   {person.personal_bio} blah blah blah blab blah blah blah blah blah blah blah blah blah blah blah blah</Typography>

@@ -1,14 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import { CircularProgress } from '@material-ui/core';
 import InfoCard from './InfoCard';
-import Header from './Header';
-import Footer from './Footer';
-// import Dropdown from './components/Dropdown';
-// import './App.css';
 import axios from 'axios';
 import Typical from 'react-typical';
 
-function Home() {
+function HomePage() {
   const [people, setPeople] = useState([]);
   const [loading, setLoading] = useState(true)
 
@@ -32,13 +28,12 @@ function Home() {
 
   return (
     <>
-      <Header />
 
       {loading ? 
         <>
           <CircularProgress />
           <Typical
-          steps={['Black', 1500, 'Lives', 1500, 'Matter']}
+          steps={['Black', 1500, 'Black Lives', 1500, 'Black Lives Matter', 1500]}
           // loop={Infinity}
           wrapper="h1"
           />
@@ -47,13 +42,11 @@ function Home() {
         
         : 
         <>
-          {/* <Dropdown props={people}  /> */}
           <InfoCard props={people} />
         </>
       }
-      <Footer />
     </>
   );
 }
 
-export default Home;
+export default HomePage;
