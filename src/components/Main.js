@@ -1,8 +1,8 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
-import ResourcePage from './ResourcePage';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import HomePage from './HomePage/HomePage';
+import AboutPage from './AboutPage/AboutPage';
+import ResourcePage from './ResourcePage/ResourcePage';
 
 function Main() {
   return (
@@ -12,7 +12,7 @@ function Main() {
         <Route path="/about" component={AboutPage} />
         <Route path="/resource" component={ResourcePage} />
       </Switch>
-    </main> 
-  )
+    </main>
+  );
 }
 export default Main;

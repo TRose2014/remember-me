@@ -1,7 +1,9 @@
 import React from 'react';
+import './AboutPage.css';
+
 
 function AboutPage() {
-  return(
+  return (
     <>
       <h1 className="aboutHeader">About Me</h1>
       <div className="about">
@@ -9,7 +11,7 @@ function AboutPage() {
         <p>If this website gets enough traction I would love to expand it to remember those we lost pre-2010. I also hope to  have the ability to create personal webpages for each indivual whose lives were taken by violent police officers.</p>
       </div>
     </>
-  )
+  );
 }
 
 export default AboutPage;

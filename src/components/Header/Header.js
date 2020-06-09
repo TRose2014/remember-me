@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 function Header() {
-  return(
+  return (
     <header className="header bar">
-      Remember Me
+      <h1>Remember Me</h1>
 
       <ul>
         <Link to="/">Home </Link>
@@ -13,7 +14,7 @@ function Header() {
       </ul>
 
     </header>
-  )
+  );
 }
 
 export default Header;

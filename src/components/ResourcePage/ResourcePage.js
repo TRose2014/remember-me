@@ -1,4 +1,5 @@
 import React from 'react';
+import './ResourcePage.css';
 
 function ResourcePage() {
   return (
@@ -24,7 +25,7 @@ function ResourcePage() {
         </ul>
       </div>
     </>
-  )
+  );
 }
 
 export default ResourcePage;

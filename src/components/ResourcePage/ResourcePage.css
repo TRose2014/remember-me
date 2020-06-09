@@ -1,0 +1,34 @@
+.resourceHeader {
+  color: #6c2e24;
+  font-size: 2.5em;
+}
+
+.resource {
+  display: block;
+}
+
+.resource li {
+  margin-bottom: 20px;
+}
+
+.resource li a {
+  text-decoration: underline;
+  color: #6c2e24;
+  word-spacing: 0.25em;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 712px) {
+  .resourceContainer {
+    display: flex;
+    align-self: center;
+  }
+
+  .resource li {
+    margin-bottom: 6%;
+  }
+
+  .resource li a {
+    font-size: 1.75rem;
+  }
+}

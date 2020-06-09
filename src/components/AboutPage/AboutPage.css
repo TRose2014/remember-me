@@ -1,0 +1,26 @@
+.about {
+  text-align: center;
+  width: 90%;
+}
+
+.aboutHeader {
+  color: #6c2e24;
+  font-size: 3em;
+}
+
+.about p {
+  color: #6c2e24;
+  line-height: 2.5em;
+  word-spacing: 0.5em;
+  padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 712px) {
+  .aboutHeader {
+    font-size: 3rem;
+  }
+
+  .about p {
+    font-size: 1.25rem !important;
+  }
+}

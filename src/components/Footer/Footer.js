@@ -1,11 +1,11 @@
 import React from 'react';
 
 function Footer() {
-  return(
+  return (
     <footer className="bar">
       Never forget
     </footer>
-  )
+  );
 }
 
 export default Footer;
