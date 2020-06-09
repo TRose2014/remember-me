@@ -1,3 +1,8 @@
+.holder {
+  width: 100%;
+  text-align: justify;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -37,14 +42,6 @@ p {
   flex-direction: column;
   margin: auto;
 }
-
-
-/* Media query for min for 599px */
-/* .MuiTypography-body1,
-p {
-
-  margin: 3% !important;
-} */
 
 @media only screen and (min-width: 712px) {
   .container {

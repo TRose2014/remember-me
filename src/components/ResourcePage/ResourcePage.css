@@ -3,6 +3,10 @@
   font-size: 2.5em;
 }
 
+.resourceContainer {
+  margin-left: 15%;
+}
+
 .resource {
   display: block;
 }

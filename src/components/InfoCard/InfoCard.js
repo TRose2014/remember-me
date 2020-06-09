@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import {
   Card, CardContent, Typography, Avatar,
 } from '@material-ui/core';
+import { v4 as uuidv4 } from 'uuid';
 import './InfoCard.css';
 
 function InfoCard(props) {
@@ -27,13 +28,13 @@ function InfoCard(props) {
   }
 
   return (
-    <div style={{"width": "100%"}}>
+    <div className="holder">
       <select onClick={sortedArray}>
         <option value="Sort First Names A-Z">Sort First Names A-Z</option>
       </select>
       <div className="container">
-        {people.map((person, index) => (
-          <Card key={index} className="cardContainer">
+        {people.map((person) => (
+          <Card key={uuidv4()} className="cardContainer">
             <CardContent>
               <Avatar alt={person.name} src={person.image_url} variant="square" style={{ width: '100%', height: 'auto' }} />
               <Typography className="name">
