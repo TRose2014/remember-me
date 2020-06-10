@@ -55,8 +55,8 @@ main {
 }
 
 select {
-  margin-left: 25%;
-  margin-bottom: 5%;
+  margin: auto;
+  display: flex;
 }
 
 span {
