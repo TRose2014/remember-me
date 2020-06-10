@@ -59,3 +59,9 @@ p {
     margin: 0% !important;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    grid-template-columns: auto auto auto;
+  }
+}

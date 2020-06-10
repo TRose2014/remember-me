@@ -41,12 +41,17 @@ function InfoCard(props) {
                 {person.name}
               </Typography>
               <Typography>
-                <span>About Me: </span>
                 {person.personal_bio}
               </Typography>
+              <br />
+              <Typography>
+                {person.last_seen}
+              </Typography>
+              <br />
               <Typography>
                 <span>{person.date_lost}</span>
               </Typography>
+              <br />
               <em>Remember Me</em>
             </CardContent>
           </Card>

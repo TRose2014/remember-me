@@ -15,6 +15,12 @@
   padding-bottom: 5%;
 }
 
+.aboutMeImage {
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+}
+
 @media only screen and (min-width: 712px) {
   .aboutHeader {
     font-size: 3rem;
