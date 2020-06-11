@@ -21,6 +21,17 @@
   border-radius: 20%;
 }
 
+.socialIconContainer {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  margin-bottom: 3%;
+}
+
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 3rem !important;
+}
+
 @media only screen and (min-width: 712px) {
   .aboutHeader {
     font-size: 3rem;
