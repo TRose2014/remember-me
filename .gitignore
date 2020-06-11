@@ -18,6 +18,8 @@
 .env.test.local
 .env.production.local
 .MyNotes.md
+.eslintrc.json
+.stylelintrc.json
 
 npm-debug.log*
 yarn-debug.log*
