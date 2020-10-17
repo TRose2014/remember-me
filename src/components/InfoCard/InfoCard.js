@@ -2,10 +2,11 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import {
-  Card, CardContent, Typography, Avatar,
+  Card, CardContent, Typography,
 } from '@material-ui/core';
 import { v4 as uuidv4 } from 'uuid';
 import './InfoCard.css';
+import defaultImage from '../../assets/Single-fist.png';
 
 function InfoCard(props) {
   const [people, setPeople] = useState(props.props);
@@ -36,7 +37,7 @@ function InfoCard(props) {
         {people.map((person) => (
           <Card key={uuidv4()} className="cardContainer">
             <CardContent>
-              <Avatar alt={person.name} src={person.image_url} variant="square" style={{ width: '100%', height: 'auto' }} />
+              <img alt={person.name} src={person.image_url} onError={(e) => { e.target.src = defaultImage; }} style={{ objectFit: 'contain', width: '100%', height: '250px' }} />
               <Typography className="name">
                 {person.name}
               </Typography>
