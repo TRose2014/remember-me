@@ -25,7 +25,7 @@ You will also see any lint errors in the console.
 
 
 #### Acknowledgements:
-* Fist icon made by [Darius Dan](https://www.flaticon.com/authors/darius-dan)
+* Fist icon made by [Freepik](https://www.flaticon.com/)
 
 #### Sources:
 * [Blackpast](https://www.blackpast.org)
