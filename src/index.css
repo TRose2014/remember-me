@@ -51,6 +51,7 @@ main {
 select {
   margin: auto;
   display: flex;
+  padding: 5px;
 }
 
 span {
