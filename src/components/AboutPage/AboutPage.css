@@ -1,5 +1,4 @@
 .about {
-  text-align: center;
   width: 90%;
 }
 
@@ -39,5 +38,11 @@
 
   .about p {
     font-size: 1.25rem !important;
+  }
+
+  .aboutMeImage {
+    float: right;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 }
