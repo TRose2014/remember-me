@@ -11,17 +11,17 @@
 * [back-end-repo](https://github.com/TRose2014/remember-me-backend)
 
 ### Prerequisites
-Before continuing, please ensure you have [yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable) installed on your computer
+Before continuing, please ensure you have [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed on your computer
 
 #### Running the app
-* Run `yarn start` in terminal
+* Run `npm start` in terminal
 * Runs the app in the development mode.<br />
 * Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 * The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
   
 #### Tests
-* Run `yarn test` in terminal
+* Run `npm run test` in terminal
 
 
 #### Acknowledgements:
