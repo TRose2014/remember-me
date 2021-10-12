@@ -6,7 +6,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Image from '../../assets/Serious-face.png';
 import './AboutPage.css';
 
-
 function AboutPage() {
   return (
     <>
