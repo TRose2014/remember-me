@@ -14,28 +14,23 @@ function HomePage() {
         collection: 'people',
         database: 'heroku_brk6g069',
         dataSource: 'Remember-Me',
-        projection: {
-          _id: 1,
-        },
       });
-
       const config = {
         method: 'post',
-        url: process.env.REACT_APP_API_URL,
+        // url: `https://crossorigin.me/${process.env.REACT_APP_API_URL}`,
+        url: `${process.env.REACT_APP_API_URL}`,
         headers: {
           'Content-Type': 'application/json',
-          // 'Access-Control-Request-Headers': '*',
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Credentials': true,
           'api-key': process.env.REACT_APP_API_KEY,
         },
         data,
       };
-      // const url = process.env.REACT_APP_API_URL;
-      // console.log(`url ${url}`);
 
       axios(config)
         .then((response) => {
+          console.log('Hello');
           console.log(JSON.stringify(response.data));
           // response = JSON.stringify(response.data);
           setPeople(JSON.stringify(response.data));
@@ -44,6 +39,9 @@ function HomePage() {
         .catch((error) => {
           console.log(error);
         });
+
+        // const url = `${process.env.REACT_APP_API_URL}`;
+        // console.log(`url ${url}`);
 
       // try {
       //   const response = await axios.get(url);
