@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { CircularProgress } from '@material-ui/core';
-import axios from 'axios';
 import Typical from 'react-typical';
 import InfoCard from '../InfoCard/InfoCard';
+import data from '../../data/dataInfo.json';
 
 function HomePage() {
   const [people, setPeople] = useState([]);
@@ -10,15 +10,16 @@ function HomePage() {
 
   useEffect(() => {
     async function getData() {
-      const url = 'https://remember-me-1-backend.herokuapp.com/info';
+
       try {
-        const response = await axios.get(url);
-        console.log('response', response.data);
-        setPeople(response.data);
+        // setTimeout(() => 2000)
+        setPeople(data);
         setLoading(false);
+        console.log(people);
       } catch (e) {
         console.log(`There was an error ${e}`);
       }
+
     }
 
     getData();
